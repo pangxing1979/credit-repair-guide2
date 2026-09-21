@@ -12,7 +12,7 @@
     
     <!-- 状态栏 -->
     <div class="status-bar">
-      <span>9:41</span>
+      <span id="current-time">--:--</span>
       <span>100%</span>
     </div>
 
@@ -196,6 +196,17 @@
       setTimeout(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; }, 10);
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(-50%) translateY(-20px)'; setTimeout(() => toast.remove(), 300); }, 2000);
     }
+
+    // 显示真实时间
+    function updateTime() {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      const el = document.getElementById('current-time');
+      if (el) el.textContent = h + ':' + m;
+    }
+    updateTime();
+    setInterval(updateTime, 60000);
   </script>
   <script src="main.js"></script>
 </body>
