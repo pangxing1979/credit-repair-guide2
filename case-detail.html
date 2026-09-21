@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BESHORE · 案件详情</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-container">
+    
+    <div class="status-bar"><span>9:41</span><span>100%</span></div>
+
+    <header class="page-header">
+      <h1>司法风险</h1>
+      <div class="header-actions">
+        <button class="header-btn">⋯</button>
+      </div>
+    </header>
+
+    <main class="content-area">
+
+      <!-- 返回 -->
+      <a href="judicial-report.html" class="back-btn">← 返回列表</a>
+
+      <!-- 案件概览 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <span class="card-title">
+            <span class="badge badge-risk-high">高风险</span>
+            <span class="badge badge-case" style="margin-left: 4px;">民事案件</span>
+          </span>
+          <span class="card-subtitle">(2023)渝0112民初12345号</span>
+        </div>
+
+        <div class="text-section" style="margin-top: var(--spacing-md);">
+          <h3>案件简述</h3>
+          <div class="data-row"><span class="data-label">案由</span><span class="data-value">买卖合同纠纷</span></div>
+          <div class="data-row"><span class="data-label">案件类型</span><span class="data-value">民事一审 · 普通程序</span></div>
+          <div class="data-row"><span class="data-label">诉讼地位</span><span class="data-value">被告</span></div>
+          <div class="data-row"><span class="data-label">立案/裁判</span><span class="data-value">2023-05-12 / 2023-08-24</span></div>
+          <div class="data-row"><span class="data-label">履行状态</span><span class="data-value" style="color: var(--color-success-green);">已履行完毕</span></div>
+        </div>
+      </div>
+
+      <!-- 风险指向 -->
+      <div class="card animate-in" style="border-color: var(--color-risk-red);">
+        <div class="card-header">
+          <span class="card-title" style="color: var(--color-risk-red);">风险指向</span>
+        </div>
+        <p>该案裁判文书已在<span style="color: var(--color-gold);">中国裁判文书网</span>及多个第三方数据平台公开收录，在企业招投标、供应商准入、银行授信等场景中，将成为对方尽职调查的直接检索对象，影响商业合作信任与准入结果。</p>
+      </div>
+
+      <!-- 关联案件一览 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <span class="card-title">关联案件一览　共 3 条</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>案号</th>
+                <th>所属法院</th>
+                <th>案件情况</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>(2023)渝0112民初12345号</td>
+                <td>重庆市渝北区人民法院</td>
+                <td><span class="badge badge-risk-low">已履行</span> 买卖合同纠纷</td>
+              </tr>
+              <tr>
+                <td>(2024)渝0112执5678号</td>
+                <td>重庆市渝北区人民法院</td>
+                <td><span class="badge badge-risk-mid">已结案</span> 买卖合同案件执行</td>
+              </tr>
+              <tr>
+                <td>(2023)渝0105民初8890号</td>
+                <td>重庆市江北区人民法院</td>
+                <td><span class="badge badge-risk-low">调解结案</span> 票据追索权纠纷</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 裁判文书信息 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <span class="card-title">裁判文书信息</span>
+        </div>
+        <div class="data-row"><span class="data-label">文书类型</span><span class="data-value">民事判决书</span></div>
+        <div class="data-row"><span class="data-label">所属法院</span><span class="data-value">重庆市渝北区人民法院</span></div>
+        <div class="data-row"><span class="data-label">审判人员</span><span class="data-value">审判员 张明 · 书记员 李娜</span></div>
+        <div class="data-row"><span class="data-label">当事人</span><span class="data-value" style="font-size: var(--font-size-helper);">原告 重庆鑫远达机械制造有限公司 ／ 被告 重庆某某数科有限公司</span></div>
+        <div class="data-row"><span class="data-label">判决结果</span><span class="data-value" style="font-size: var(--font-size-helper);">被告支付货款 1,234,567.89 元及逾期利息，负担案件受理费</span></div>
+        <div class="data-row"><span class="data-label">公开平台</span><span class="data-value" style="font-size: var(--font-size-helper);">裁判文书网 · 企查查 · 天眼查 · 爱企查</span></div>
+      </div>
+
+      <div class="card">
+        <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); line-height: var(--line-height-body);">
+          该案虽已履行完毕，但裁判文书仍在公开平台展示，持续影响企业招投标资格与供应商准入评分。依据法释〔2016〕19号及相关规定，已履行案件可依法申请合规处理。
+        </p>
+      </div>
+
+      <!-- 法律依据 -->
+      <div class="text-section">
+        <h3>法律依据</h3>
+        <div class="card">
+          <div class="list-item">
+            <span class="list-item-title" style="color: var(--color-gold);">法释〔2016〕19号</span>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">最高人民法院关于人民法院在互联网公布裁判文书的规定，明确裁判文书的合规处理与信息删除规则——司法案件信息处理的直接依据。</p>
+          </div>
+          <div class="list-item">
+            <span class="list-item-title" style="color: var(--color-gold);">发改财金〔2026〕447号</span>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">公共信用信息基础目录与失信惩戒措施基础清单，界定可公示信息的边界；不在目录内的信息，原则上不得作为失信信息公示。</p>
+          </div>
+          <div class="list-item">
+            <span class="list-item-title" style="color: var(--color-gold);">国家发展改革委令 第36号</span>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">《信用修复管理办法》，2026年4月1日施行；最短公示期届满＋完全履行义务＋公开作出信用承诺，经"信用中国"按"谁认定、谁修复"办理。</p>
+          </div>
+          <div class="list-item">
+            <span class="list-item-title" style="color: var(--color-gold);">国办发〔2026〕8号</span>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">符合修复条件的，相关部门应当及时更新信息并据以开展公共信用评价；第三方机构须同步更新企业信用信息。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 优化建议 -->
+      <div class="text-section">
+        <h3>优化建议</h3>
+        <div class="card">
+          <div class="list-item"><span class="list-item-title">1. 核实案件履行凭证</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">结案通知书、付款凭证、法院出具的履行证明是否齐全。</p></div>
+          <div class="list-item"><span class="list-item-title">2. 确认文书收录范围</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">文书在各公开平台的收录范围，逐平台登记案号与展示状态。</p></div>
+          <div class="list-item"><span class="list-item-title">3. 申请合规处理</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">裁判文书依"法释〔2016〕19号"向作出文书的法院申请合规处理；涉失信信息则按"谁认定、谁修复"经"信用中国"推送办理。</p></div>
+          <div class="list-item"><span class="list-item-title">4. 跟进第三方平台同步更新</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 2px;">完成后留存前后对比凭证归档。</p></div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <a href="payment.html" class="btn btn-primary btn-full" style="margin-top: var(--spacing-lg);">免费获取公示信息管理方案</a>
+
+      <div class="disclaimer">
+        零费用咨询 · 专员 1 对 1 对接 · 不承诺任何办理结果
+      </div>
+
+    </main>
+
+    <div class="bottom-bar">
+      <button class="btn btn-outline" data-action="product-list">▦ 产品列表</button>
+      <button class="btn btn-primary" data-action="online-test">¥ 在线测额</button>
+    </div>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="BESHORE 司法分析 H5 - 企业信用风险分析服务平台">
+  <title>BESHORE · 已授权企业</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-container">
+    
+    <!-- 状态栏 -->
+    <div class="status-bar">
+      <span>9:41</span>
+      <span>100%</span>
+    </div>
+
+    <!-- 页面标题栏 -->
+    <header class="page-header">
+      <h1>已授权企业</h1>
+      <div class="header-actions">
+        <button class="header-btn" onclick="showToast('搜索功能开发中')">搜索</button>
+        <button class="header-btn" onclick="showToast('更多功能开发中')">⋯</button>
+      </div>
+    </header>
+
+    <!-- 示例数据提示条 -->
+    <div class="alert-bar">
+      示例数据 · 实际企业列表以系统查询为准
+    </div>
+
+    <!-- 企业列表区域 -->
+    <main class="content-area">
+
+      <!-- 企业卡片 1 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <div>
+            <div class="card-title" style="color: var(--color-gold);">会员企业</div>
+            <div class="card-subtitle">授权日期 2026-09-04 10:18:00</div>
+          </div>
+          <span class="badge badge-risk-low">处理完成</span>
+        </div>
+
+        <div class="data-row">
+          <span class="data-label">企业名称</span>
+          <span class="data-value gold">重庆某某数科有限公司</span>
+        </div>
+        <div class="data-row">
+          <span class="data-label">统一社会信用代码</span>
+          <span class="data-value">91500000MA5UXXXXXX</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <h3 style="font-size: var(--font-size-card-title); color: var(--color-rice-gold); margin-bottom: var(--spacing-md);">
+          六大业务模块
+        </h3>
+
+        <div class="module-grid">
+          <!-- 司法分析（主CTA） -->
+          <a href="judicial-report.html" class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, var(--color-card-surface) 0%, var(--color-bright-blue) 100%);">
+            <div class="module-icon" style="width: 56px; height: 56px; font-size: 24px;">法</div>
+            <h3 style="font-size: 16px;">司法分析</h3>
+            <p>基于司法涉诉信息的风险分析</p>
+          </a>
+
+          <!-- GEO获客陪跑 -->
+          <a href="geo-service.html" class="module-card">
+            <div class="module-icon">G</div>
+            <h3>GEO获客陪跑</h3>
+            <p>AI搜索时代 · 3个月教会您自己运营</p>
+          </a>
+
+          <!-- 资质办理 -->
+          <a href="qualification.html" class="module-card">
+            <div class="module-icon">资</div>
+            <h3>资质办理</h3>
+            <p>立信/诚信企业认证申报</p>
+          </a>
+
+          <!-- 经营分析 -->
+          <a href="business-analysis.html" class="module-card">
+            <div class="module-icon">经</div>
+            <h3>经营分析</h3>
+            <p>基于企业经营数据的综合分析</p>
+          </a>
+
+          <!-- 税务报告 -->
+          <a href="tax-report.html" class="module-card">
+            <div class="module-icon">税</div>
+            <h3>税务报告</h3>
+            <p>税务风险识别与合规应对方案</p>
+          </a>
+
+          <!-- 电子保函 -->
+          <a href="guarantee.html" class="module-card">
+            <div class="module-icon">保</div>
+            <h3>电子保函</h3>
+            <p>投标/履约保函在线办理</p>
+          </a>
+        </div>
+
+        <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: var(--spacing-md); text-align: center;">
+          注：司法信息每小时更新，报告生成后可导出
+        </p>
+      </div>
+
+      <!-- 企业卡片 2 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <div>
+            <div class="card-title" style="color: var(--color-gold);">会员企业</div>
+            <div class="card-subtitle">授权日期 2026-08-17 14:32:00</div>
+          </div>
+          <span class="badge badge-risk-low">处理完成</span>
+        </div>
+
+        <div class="data-row">
+          <span class="data-label">企业名称</span>
+          <span class="data-value gold">重庆鑫远达机械制造有限公司</span>
+        </div>
+        <div class="data-row">
+          <span class="data-label">统一社会信用代码</span>
+          <span class="data-value">91500112MA5YYYYYYY</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="module-grid">
+          <a href="judicial-report.html" class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, var(--color-card-surface) 0%, var(--color-bright-blue) 100%);">
+            <div class="module-icon" style="width: 56px; height: 56px; font-size: 24px;">法</div>
+            <h3 style="font-size: 16px;">司法分析</h3>
+            <p>基于司法涉诉信息的风险分析</p>
+          </a>
+
+          <a href="geo-service.html" class="module-card">
+            <div class="module-icon">G</div>
+            <h3>GEO获客陪跑</h3>
+            <p>AI搜索时代 · 3个月教会您自己运营</p>
+          </a>
+
+          <a href="qualification.html" class="module-card">
+            <div class="module-icon">资</div>
+            <h3>资质办理</h3>
+            <p>立信/诚信企业认证申报</p>
+          </a>
+
+          <a href="business-analysis.html" class="module-card">
+            <div class="module-icon">经</div>
+            <h3>经营分析</h3>
+            <p>基于企业经营数据的综合分析</p>
+          </a>
+
+          <a href="tax-report.html" class="module-card">
+            <div class="module-icon">税</div>
+            <h3>税务报告</h3>
+            <p>税务风险识别与合规应对方案</p>
+          </a>
+
+          <a href="guarantee.html" class="module-card">
+            <div class="module-icon">保</div>
+            <h3>电子保函</h3>
+            <p>投标/履约保函在线办理</p>
+          </a>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- 底部悬浮按钮 -->
+    <div class="bottom-bar">
+      <button class="btn btn-outline" data-action="product-list">▦ 产品列表</button>
+      <button class="btn btn-primary" data-action="online-test">¥ 在线测额</button>
+    </div>
+
+  </div>
+
+  <!-- 提示脚本 -->
+  <script>
+    function showToast(message) {
+      const existing = document.querySelector('.toast-notification');
+      if (existing) existing.remove();
+      
+      const toast = document.createElement('div');
+      toast.className = 'toast-notification';
+      toast.textContent = message;
+      toast.style.cssText = `
+        position: fixed; top: 80px; left: 50%; transform: translateX(-50%) translateY(-20px);
+        background: rgba(7,27,58,0.95); color: #FBF0DC; padding: 10px 24px; border-radius: 20px;
+        border: 1px solid #D5A84D; font-size: 12px; z-index: 9999; opacity: 0;
+        transition: all 0.3s ease;
+      `;
+      document.body.appendChild(toast);
+      setTimeout(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; }, 10);
+      setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(-50%) translateY(-20px)'; setTimeout(() => toast.remove(), 300); }, 2000);
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

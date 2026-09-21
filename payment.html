@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BESHORE · 优化报价确认</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-container">
+    
+    <div class="status-bar"><span>9:41</span><span>100%</span></div>
+
+    <header class="page-header">
+      <h1>已授权企业</h1>
+      <div class="header-actions">
+        <button class="header-btn">⋯</button>
+      </div>
+    </header>
+
+    <!-- 示例数据提示 -->
+    <div class="alert-bar">示例数据 · 实际报价以客服确认为准</div>
+
+    <main class="content-area">
+
+      <a href="javascript:history.back()" class="back-btn">← 返回</a>
+
+      <!-- 来源模块 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <span class="card-title" style="color: var(--color-gold);">司法分析 · 关联企业</span>
+        </div>
+        <p style="font-size: var(--font-size-helper); color: var(--color-text-muted);">当前来源 司法分析 · 不同模块进入时自动切换徽标与可优化项</p>
+      </div>
+
+      <!-- 企业信息 -->
+      <div class="card animate-in">
+        <div class="data-row"><span class="data-label">联系人</span><span class="data-value">李理 · 187****7410</span></div>
+        <div class="data-row"><span class="data-label">服务保障</span><span class="data-value" style="font-size: var(--font-size-helper);">平台担保 · 按费收费 · 全流程监管，为您提供一站式安心服务</span></div>
+      </div>
+
+      <!-- 高风险项 -->
+      <div class="card animate-in">
+        <div class="card-header">
+          <span class="card-title" style="color: var(--color-risk-red);">高风险 (1项)</span>
+        </div>
+
+        <div style="margin-top: var(--spacing-md);">
+          <div style="font-size: var(--font-size-card-title); font-weight: 600; color: var(--color-rice-gold); margin-bottom: var(--spacing-sm);">可优化服务项</div>
+          
+          <div class="card" style="margin: var(--spacing-sm) 0; border-color: var(--color-risk-red);">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <div>
+                <div style="font-size: var(--font-size-body); font-weight: 600; color: var(--color-text-primary);">司法案件（1 项 · 示例数据）</div>
+                <div style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">
+                  <span class="badge badge-risk-high">高风险</span>
+                  <span style="margin-left: 4px;">2026渝0112民初1232号　民事案件</span>
+                </div>
+                <div style="font-size: var(--font-size-helper); color: var(--color-text-muted);">案件详情 ›</div>
+              </div>
+              <div style="font-size: 18px; font-weight: 700; color: var(--color-gold);">¥2000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 汇总 -->
+      <div class="card animate-in">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: var(--spacing-sm);">
+          <input type="checkbox" id="selectAll" style="width: 18px; height: 18px; accent-color: var(--color-gold);">
+          <label for="selectAll" style="font-size: var(--font-size-body); color: var(--color-text-primary);">全选　共可优化取消公示 1 项</label>
+        </div>
+
+        <div class="data-row" style="border-top: 1px solid var(--color-border); padding-top: var(--spacing-sm);">
+          <span class="data-label">预付跑腿服务费</span>
+          <span class="data-value" style="font-size: 20px; color: var(--color-gold);">¥2000.00</span>
+        </div>
+
+        <div style="margin-top: var(--spacing-md);">
+          <div style="display: flex; align-items: flex-start; gap: 8px;">
+            <input type="checkbox" id="agree" style="width: 18px; height: 18px; accent-color: var(--color-gold); margin-top: 2px;">
+            <label for="agree" style="font-size: var(--font-size-helper); color: var(--color-text-secondary);">
+              我已阅读企业公示信息管理咨询服务声明（展开）
+            </label>
+          </div>
+        </div>
+
+        <button class="btn btn-primary btn-full" style="margin-top: var(--spacing-md);" onclick="showToast('支付功能开发中，敬请期待')">立即支付</button>
+      </div>
+
+      <div class="disclaimer">
+        办理结果以平台与法院审核为准<br>
+        某某数科只提供信息梳理与运营陪跑服务，对结果不作任何承诺
+      </div>
+
+    </main>
+
+    <div class="bottom-bar">
+      <button class="btn btn-outline" data-action="product-list">▦ 产品列表</button>
+      <button class="btn btn-primary" data-action="online-test">¥ 在线测额</button>
+    </div>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
