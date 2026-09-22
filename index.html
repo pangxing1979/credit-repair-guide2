@@ -3,174 +3,86 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="BESHORE 司法分析 H5 - 企业信用风险分析服务平台">
-  <title>BESHORE · 已授权企业</title>
+  <meta name="description" content="企业涉诉信息公示管理服务平台 —— 司法风险分析 · 公示信息管理 · 免费出具涉诉风险评估方案">
+  <title>企业涉诉信息合规处理 · 免费获取风险评估方案</title>
   <link rel="stylesheet" href="style.css">
 <base target="_blank">
 </head>
 <body>
   <div class="page-container">
 
-    <!-- 状态栏 -->
     <div class="status-bar">
       <span id="current-time">--:--</span>
       <span>100%</span>
     </div>
 
-    <!-- 页面标题栏 -->
-    <header class="page-header">
-      <h1>已授权企业</h1>
-      <div class="header-actions">
-        <button class="header-btn" onclick="showToast('搜索功能开发中')">搜索</button>
-        <button class="header-btn" onclick="showToast('更多功能开发中')">⋯</button>
-      </div>
-    </header>
+    <!-- ===== 1. HERO：价值主张 + 留资CTA ===== -->
+    <section class="hero-section" style="padding-top: var(--spacing-lg);">
+      <span class="hero-badge">企业涉诉信息 · 公示管理</span>
+      <h2 style="font-size: 22px; line-height: 1.4;">案子已结，记录还在公开？<br>正在影响你的投标、贷款和合作</h2>
+      <p style="margin-top: var(--spacing-sm);">裁判文书、执行信息在公开平台持续展示 —— 已履行的案件，可依据国家政策申请合规处理。我们为你免费出具涉诉风险评估方案。</p>
+      <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" class="btn btn-primary btn-full" style="margin-top: var(--spacing-lg); display: flex; align-items: center; justify-content: center;">免费获取涉诉风险评估方案</a>
+      <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: var(--spacing-sm); text-align: center;">提交后 24 小时内专员联系 · 评估免费 · 不承诺任何办理结果</p>
+    </section>
 
-    <!-- 示例数据提示条 -->
-    <div class="alert-bar">
-      示例数据 · 实际企业列表以系统查询为准
-    </div>
-
-    <!-- 非会员留资引导条：新增 -->
-    <a href="https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh" target="_blank" style="display:block;margin:0 var(--spacing-md) var(--spacing-md);padding:14px 16px;background:linear-gradient(135deg, rgba(213,168,77,0.15), rgba(213,168,77,0.05));border:1px solid var(--color-gold);border-radius:12px;text-decoration:none;">
-      <div style="display:flex;justify-content:space-between;align-items:center;">
-        <div>
-          <div style="color:var(--color-rice-gold);font-size:15px;font-weight:600;">企业有涉诉记录？</div>
-          <div style="color:var(--color-text-muted);font-size:12px;margin-top:4px;">免费获取涉诉风险评估方案 · 专员24小时内联系</div>
-        </div>
-        <span style="color:var(--color-gold);font-size:14px;flex:none;">立即领取 ›</span>
-      </div>
-    </a>
-
-    <!-- 企业列表区域 -->
     <main class="content-area">
 
-      <!-- 企业卡片 1 -->
-      <div class="card animate-in">
-        <div class="card-header">
-          <div>
-            <div class="card-title" style="color: var(--color-gold);">会员企业</div>
-            <div class="card-subtitle">授权日期 2026-09-04 10:18:00</div>
+      <!-- ===== 2. 痛点区：三个真实场景 ===== -->
+      <div class="text-section">
+        <h3>一条公开记录，正在这些地方拖累你</h3>
+        <div class="card">
+          <div class="list-item">
+            <div class="list-item-header">
+              <span class="list-item-title" style="color: var(--color-risk-red);">🚫 招投标被拒</span>
+            </div>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">资格预审阶段，评委通过公开平台查到你家的裁判文书，直接扣分甚至废标。</p>
           </div>
-          <span class="badge badge-risk-low">处理完成</span>
+          <div class="list-item">
+            <div class="list-item-header">
+              <span class="list-item-title" style="color: var(--color-warning-orange);">💸 贷款授信受阻</span>
+            </div>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">银行尽调把涉诉信息列为重点审查项，有记录就降额、加息，甚至拒贷。</p>
+          </div>
+          <div class="list-item">
+            <div class="list-item-header">
+              <span class="list-item-title" style="color: var(--color-gold);">🤝 合作方尽调流失</span>
+            </div>
+            <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">客户、供应商签约前查一下你的名字——有案子，订单就没了。</p>
+          </div>
         </div>
-
-        <div class="data-row">
-          <span class="data-label">企业名称</span>
-          <span class="data-value gold">重庆某某数科有限公司</span>
-        </div>
-        <div class="data-row">
-          <span class="data-label">统一社会信用代码</span>
-          <span class="data-value">91500000MA5UXXXXXX</span>
-        </div>
-
-        <div class="divider"></div>
-
-        <h3 style="font-size: var(--font-size-card-title); color: var(--color-rice-gold); margin-bottom: var(--spacing-md);">
-          六大业务模块
-        </h3>
-
-        <div class="module-grid">
-          <!-- 司法分析（主CTA） -->
-          <a href="judicial-report.html" class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, var(--color-card-surface) 0%, var(--color-bright-blue) 100%);">
-            <div class="module-icon" style="width: 56px; height: 56px; font-size: 24px;">法</div>
-            <h3 style="font-size: 16px;">司法分析</h3>
-            <p>基于司法涉诉信息的风险分析</p>
-          </a>
-
-          <!-- GEO获客陪跑 -->
-          <a href="geo-service.html" class="module-card">
-            <div class="module-icon">G</div>
-            <h3>GEO获客陪跑</h3>
-            <p>AI搜索时代 · 3个月教会您自己运营</p>
-          </a>
-
-          <!-- 资质办理 -->
-          <a href="qualification.html" class="module-card">
-            <div class="module-icon">资</div>
-            <h3>资质办理</h3>
-            <p>立信/诚信企业认证申报</p>
-          </a>
-
-          <!-- 经营分析 -->
-          <a href="business-analysis.html" class="module-card">
-            <div class="module-icon">经</div>
-            <h3>经营分析</h3>
-            <p>基于企业经营数据的综合分析</p>
-          </a>
-
-          <!-- 税务报告 -->
-          <a href="tax-report.html" class="module-card">
-            <div class="module-icon">税</div>
-            <h3>税务报告</h3>
-            <p>税务风险识别与合规应对方案</p>
-          </a>
-
-          <!-- 电子保函 -->
-          <a href="guarantee.html" class="module-card">
-            <div class="module-icon">保</div>
-            <h3>电子保函</h3>
-            <p>投标/履约保函在线办理</p>
-          </a>
-        </div>
-
-        <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: var(--spacing-md); text-align: center;">
-          注：司法信息每小时更新，报告生成后可导出
-        </p>
       </div>
 
-      <!-- 企业卡片 2 -->
-      <div class="card animate-in">
-        <div class="card-header">
-          <div>
-            <div class="card-title" style="color: var(--color-gold);">会员企业</div>
-            <div class="card-subtitle">授权日期 2026-08-17 14:32:00</div>
-          </div>
-          <span class="badge badge-risk-low">处理完成</span>
-        </div>
+      <div class="divider"></div>
 
-        <div class="data-row">
-          <span class="data-label">企业名称</span>
-          <span class="data-value gold">重庆某某制造有限公司</span>
-        </div>
-        <div class="data-row">
-          <span class="data-label">统一社会信用代码</span>
-          <span class="data-value">91500112MA5YYYYYYY</span>
-        </div>
-
-        <div class="divider"></div>
-
+      <!-- ===== 3. 服务区：六大模块（锚点 #services） ===== -->
+      <div class="text-section" id="services">
+        <h3>我们能帮你做什么</h3>
         <div class="module-grid">
-          <a href="judicial-report.html" class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, var(--color-card-surface) 0%, var(--color-bright-blue) 100%);">
+          <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" class="module-card" style="grid-column: span 2; background: linear-gradient(135deg, var(--color-card-surface) 0%, var(--color-bright-blue) 100%);">
             <div class="module-icon" style="width: 56px; height: 56px; font-size: 24px;">法</div>
-            <h3 style="font-size: 16px;">司法分析</h3>
-            <p>基于司法涉诉信息的风险分析</p>
+            <h3 style="font-size: 16px;">司法涉诉信息处理</h3>
+            <p>涉诉风险评估 · 裁判文书合规处理路径</p>
           </a>
-
+          <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" class="module-card">
+            <div class="module-icon">税</div>
+            <h3>税务风险</h3>
+            <p>金税四期涉税风险识别</p>
+          </a>
+          <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" class="module-card">
+            <div class="module-icon">经</div>
+            <h3>经营分析</h3>
+            <p>企业经营健康度画像</p>
+          </a>
           <a href="geo-service.html" class="module-card">
             <div class="module-icon">G</div>
             <h3>GEO获客陪跑</h3>
             <p>AI搜索时代 · 3个月教会您自己运营</p>
           </a>
-
           <a href="qualification.html" class="module-card">
             <div class="module-icon">资</div>
             <h3>资质办理</h3>
             <p>立信/诚信企业认证申报</p>
           </a>
-
-          <a href="business-analysis.html" class="module-card">
-            <div class="module-icon">经</div>
-            <h3>经营分析</h3>
-            <p>基于企业经营数据的综合分析</p>
-          </a>
-
-          <a href="tax-report.html" class="module-card">
-            <div class="module-icon">税</div>
-            <h3>税务报告</h3>
-            <p>税务风险识别与合规应对方案</p>
-          </a>
-
           <a href="guarantee.html" class="module-card">
             <div class="module-icon">保</div>
             <h3>电子保函</h3>
@@ -178,18 +90,73 @@
           </a>
         </div>
       </div>
+
+      <div class="divider"></div>
+
+      <!-- ===== 4. 信任区：政策依据 + 四步流程 ===== -->
+      <div class="text-section">
+        <h3>政策依据 —— 合规处理有法可依</h3>
+        <div class="card">
+          <div class="data-row"><span class="data-label">发改财金〔2026〕447号</span><span class="data-value" style="font-size: var(--font-size-helper);">界定哪些信息可公示</span></div>
+          <div class="data-row"><span class="data-label">国家发展改革委令第36号</span><span class="data-value" style="font-size: var(--font-size-helper);">信用修复管理办法 · 修复路径</span></div>
+          <div class="data-row"><span class="data-label">国办发〔2026〕8号</span><span class="data-value" style="font-size: var(--font-size-helper);">修复后评价须同步更新</span></div>
+          <div class="data-row"><span class="data-label">法释〔2016〕19号</span><span class="data-value" style="font-size: var(--font-size-helper);">裁判文书处理与删除规则</span></div>
+        </div>
+      </div>
+
+      <div class="text-section">
+        <h3>四步搞定</h3>
+        <div class="card">
+          <div style="display: flex; justify-content: space-between; text-align: center;">
+            <div>
+              <div style="width: 40px; height: 40px; background: var(--color-gold); color: var(--color-deep-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-weight: 700;">1</div>
+              <div style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">免费提交</div>
+            </div>
+            <div style="flex: 1; border-top: 2px solid var(--color-gold); margin-top: 20px;"></div>
+            <div>
+              <div style="width: 40px; height: 40px; background: var(--color-bright-blue); color: var(--color-rice-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-weight: 700;">2</div>
+              <div style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">风险评估</div>
+            </div>
+            <div style="flex: 1; border-top: 2px solid var(--color-gold); margin-top: 20px;"></div>
+            <div>
+              <div style="width: 40px; height: 40px; background: var(--color-bright-blue); color: var(--color-rice-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-weight: 700;">3</div>
+              <div style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">确认方案</div>
+            </div>
+            <div style="flex: 1; border-top: 2px solid var(--color-gold); margin-top: 20px;"></div>
+            <div>
+              <div style="width: 40px; height: 40px; background: var(--color-bright-blue); color: var(--color-rice-gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; font-weight: 700;">4</div>
+              <div style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">合规办理</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- ===== 5. 底部大CTA ===== -->
+      <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" class="btn btn-primary btn-full" style="margin-top: var(--spacing-lg); display: flex; align-items: center; justify-content: center;">免费获取涉诉风险评估方案</a>
+      <p style="text-align: center; font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: var(--spacing-sm);">已有 <span style="color: var(--color-gold); font-weight: 700;">200+</span> 家企业完成风险评估</p>
+
+      <div class="disclaimer">
+        本服务为信息咨询与流程协助 · 不承诺任何办理结果<br>
+        办理结果以法院、信用中国等官方平台审核为准
+      </div>
+
+      <!-- 已服务企业（降级展示） -->
+      <p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: var(--spacing-lg); text-align: center;">
+        已服务企业：重庆某某数科有限公司 · 重庆某某制造有限公司（示例）
+      </p>
 
     </main>
 
-    <!-- 底部悬浮按钮：在线测额改为留资入口 -->
     <div class="bottom-bar">
-      <button class="btn btn-outline" data-action="product-list">▦ 产品列表</button>
-      <a class="btn btn-primary" href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;">📋 免费获取方案</a>
+      <a class="btn btn-outline" href="#services" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">▦ 服务列表</a>
+      <a class="btn btn-primary" href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">📋 免费获取方案</a>
     </div>
 
   </div>
 
-  <!-- 右下悬浮留资按钮：新增（避开底部栏） -->
+  <!-- 右下悬浮留资按钮 -->
   <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" id="lead-float-btn">免费<br>评估</a>
   <style>
     #lead-float-btn{
@@ -207,22 +174,14 @@
     function showToast(message) {
       const existing = document.querySelector('.toast-notification');
       if (existing) existing.remove();
-
       const toast = document.createElement('div');
       toast.className = 'toast-notification';
       toast.textContent = message;
-      toast.style.cssText = `
-        position: fixed; top: 80px; left: 50%; transform: translateX(-50%) translateY(-20px);
-        background: rgba(7,27,58,0.95); color: #FBF0DC; padding: 10px 24px; border-radius: 20px;
-        border: 1px solid #D5A84D; font-size: 12px; z-index: 9999; opacity: 0;
-        transition: all 0.3s ease;
-      `;
+      toast.style.cssText = 'position: fixed; top: 80px; left: 50%; transform: translateX(-50%) translateY(-20px); background: rgba(7,27,58,0.95); color: #FBF0DC; padding: 10px 24px; border-radius: 20px; border: 1px solid #D5A84D; font-size: 12px; z-index: 9999; opacity: 0; transition: all 0.3s ease;';
       document.body.appendChild(toast);
       setTimeout(() => { toast.style.opacity = '1'; toast.style.transform = 'translateX(-50%) translateY(0)'; }, 10);
       setTimeout(() => { toast.style.opacity = '0'; toast.style.transform = 'translateX(-50%) translateY(-20px)'; setTimeout(() => toast.remove(), 300); }, 2000);
     }
-
-    // 显示真实时间
     function updateTime() {
       const now = new Date();
       const h = String(now.getHours()).padStart(2, '0');
