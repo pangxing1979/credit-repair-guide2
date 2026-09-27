@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>BESHORE · 企业经营分析</title>
+  <link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+  <div class="page-container">
+    <div class="status-bar"><span>9:41</span><span>100%</span></div>
+    <header class="page-header">
+      <h1>企业经营分析</h1>
+      <div class="header-actions"><button class="header-btn" onclick="history.back()">✕</button></div>
+    </header>
+
+    <main class="content-area">
+      <!-- Hero -->
+      <section class="hero-section">
+        <span class="hero-badge">企业经营报告</span>
+        <h2 style="font-size: 21px;">企业经营分析</h2>
+        <div style="margin-top: var(--spacing-md);"><span class="badge" style="background: var(--color-bright-blue); color: var(--color-rice-gold); padding: 4px 12px; font-size: var(--font-size-helper); margin-right: 6px;">免费测额</span><span class="badge" style="background: var(--color-bright-blue); color: var(--color-rice-gold); padding: 4px 12px; font-size: var(--font-size-helper); margin-right: 6px;">数据分析</span><span class="badge" style="background: var(--color-bright-blue); color: var(--color-rice-gold); padding: 4px 12px; font-size: var(--font-size-helper); margin-right: 6px;">产品匹配</span></div>
+      </section>
+
+      <!-- 检测输入区 -->
+      <div class="card animate-in" style="border-color: var(--color-gold);">
+        <div style="font-size: var(--font-size-card-title); font-weight: 600; color: var(--color-rice-gold); margin-bottom: var(--spacing-sm);">输入企业信息，免费出具经营分析</div>
+        <input id="companyInput" type="text" placeholder="输入企业全称，如：重庆某某科技有限公司" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--color-border); background:var(--color-card-surface); color:var(--color-text-primary); font-size:14px; box-sizing:border-box; margin-bottom:10px;">
+        <input id="codeInput" type="text" placeholder="统一社会信用代码（选填）" style="width:100%; padding:12px 14px; border-radius:10px; border:1px solid var(--color-border); background:var(--color-card-surface); color:var(--color-text-primary); font-size:14px; box-sizing:border-box; margin-bottom:14px;">
+        <a class="btn btn-primary btn-full" style="display:flex; align-items:center; justify-content:center; cursor:pointer;" href="javascript:void(0)" onclick="startDetect()">免费测额 ›</a>
+        <p id="tip" style="display:none; font-size: var(--font-size-helper); color: var(--color-gold); margin-top: 10px; text-align: center;">已为您打开申请表单 —— 请在表单「企业名称」栏填入刚才输入的企业名，需求类型选择「经营分析」，提交后专员 24 小时内出具报告。</p>
+      </div>
+
+      <!-- 检测内容 -->
+      <div class="text-section">
+        <h3>检测内容</h3>
+        <div class="card"><div class="list-item"><div class="list-item-header"><span class="list-item-title" style="color: var(--color-gold);">核心指标 · 5 项</span></div><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">营业收入、净利润、纳税总额、员工规模、招投标参与次数（最近3年）</p></div><div class="list-item"><div class="list-item-header"><span class="list-item-title" style="color: var(--color-gold);">健康度画像</span></div><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">对标行业均值，生成经营健康度评级与优劣势提示</p></div><div class="list-item"><div class="list-item-header"><span class="list-item-title" style="color: var(--color-gold);">产品匹配</span></div><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">结合经营状况，匹配保函、资质、增信等适用服务</p></div></div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- 办理流程 -->
+      <div class="text-section">
+        <h3>办理流程</h3>
+        <div class="card"><div class="list-item"><span class="list-item-title" style="color: var(--color-gold);">1. 提交企业信息</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">输入企业名称，免费提交测额申请</p></div>
+          <div class="list-item"><span class="list-item-title" style="color: var(--color-gold);">2. 生成经营画像</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">24 小时内基于工商年报与公开经营数据出具经营分析报告</p></div>
+          <div class="list-item"><span class="list-item-title" style="color: var(--color-gold);">3. 匹配服务方案</span><p style="font-size: var(--font-size-helper); color: var(--color-text-muted); margin-top: 4px;">报告附适用服务建议（保函/资质/增信），按需对接</p></div></div>
+      </div>
+
+      <div class="disclaimer">
+        免费出具初步评估 · 不承诺任何办理结果<br>
+        报告基于公开数据整理，仅作经营参考
+      </div>
+    </main>
+
+    <div class="bottom-bar">
+      <a class="btn btn-outline" href="index.html" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">▦ 返回首页</a>
+      <a class="btn btn-primary" href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" style="text-decoration:none; display:inline-flex; align-items:center; justify-content:center;">📋 免费获取方案</a>
+    </div>
+  </div>
+
+  <a href="javascript:void(0)" onclick="window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh','_blank')" id="lead-float-btn">免费<br>评估</a>
+  <style>
+    #lead-float-btn{position:fixed;right:14px;bottom:110px;z-index:9997;width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#D5A84D,#B8893A);color:#071B3A;font-size:13px;font-weight:700;line-height:1.3;display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;box-shadow:0 4px 14px rgba(213,168,77,0.45);}
+  </style>
+
+  <script>
+    function startDetect(){
+      var v = document.getElementById('companyInput').value.trim();
+      if(!v){ alert('请先输入企业名称'); return; }
+      document.getElementById('tip').style.display = 'block';
+      window.open('https://ycnaahb43yjf.feishu.cn/share/base/form/shrcnyuvnl3R0hDChKANRi4wwoh', '_blank');
+    }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
